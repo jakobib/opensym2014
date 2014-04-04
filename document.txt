@@ -1,5 +1,63 @@
-### Welcome to your project!
+# Collaborative writing a Wikidata handbook with Pandoc & git
 
-- Brush up on Markdown: http://daringfireball.net/projects/markdown/basics
-- Learn about Penflip: [penflip.com/help](http://www.penflip.com/help)
-- Talk to a person: support@penflip.com
+...abstract...
+
+## Collaborative Writing
+
+* Collaborative writing has become more and more widespread, not only in dedicated wikis, such as Wikipedia, but as common practice at work and among scholars.
+
+* Several collaborative writing tools exist
+  * Google Docs / Drive
+  * MediaWiki
+  * Confluence
+  * Etherpad
+  * Penflip
+  * Fidus Writer
+  * Draft
+  * Editorially
+  * DHWriter
+  * ZOHO Docs
+  * ...in addition: revision control systems (git), Dropbox, Bittorrent Sync...
+* Book sprints
+
+## Wikidata
+
+...poorly documented (a lot of description, but very confusing, especially for non-English documentation)...
+
+## The Project
+
+...three month, nine students, no previous knowledge in any of the specific skills (Wikidata and collaborative writing in general, Markdown and git in particular)...
+
+## Tools
+
+* Penflip
+* Pandoc Markdown
+* Trello (project management)
+* Technical workflow: Penflip -> git -> pandoc -> HTML/PDF
+* Writing Workflow: several hours meetings once a week
+
+## Result & lessons learned
+
+Writing:
+* ...Penflip is still very new
+* ...complexity of git hidden well, but merging still difficult
+* ...missing live editing as supported in Etherpad
+* ...integration of Pandoc missing, must be added by hand
+* ...missing easy functionality to move around / rearange texts
+
+Wikidata:
+* ...
+
+## Summary
+
+...
+
+## References
+Collaborative writing (tools):
+* https://zapier.com/blog/collaborative-writing-tools-editorially-draft-penflip/
+* http://blogs.lse.ac.uk/impactofsocialsciences/2014/04/04/five-collaborative-writing-tools-for-academics/
+* https://zenodo.org/record/8524?ln=en#.Uz6CGfldUVB
+* https://github.com/lambo/gittige-tools
+
+Wikidata:
+* ...
