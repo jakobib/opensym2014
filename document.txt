@@ -1,6 +1,22 @@
-# Collaborative writing a Wikidata handbook with Pandoc & git
+---
+title: Collaborative creation of a Wikidata handbook using Penflip, Pandoc Markdown and git
+author: Jakob Voß
+category:
+- '\category{I.7.1}{Document and Text Processing}{Document and Text Editing}[version control]'
+- '\category{I.7.2}{Document and Text Processing}{Document Preparation}'
+...
+
+
+[OpenSym 2014](http://opensym.org/os2014/) (formerly WikiSym) will be held in Berlin on August 27-29. Call for paper deadline is April 20th. This article is going to be submitted to the [Community Track](http://www.opensym.org/os2014/submission/community-track-call/). Short experience reports may be 2-4 pages long, long experience reports may be 5-10 pages long.
+
 
 ...abstract...
+## Goal of the project
+
+* Simple Handbook, easy introduction
+* in German
+* focus on authority files in Wikidata
+* printed PDF, E-Book, and HTML
 
 ## Collaborative Writing
 
@@ -19,6 +35,8 @@
   * ZOHO Docs
   * ...in addition: revision control systems (git), Dropbox, Bittorrent Sync...
 * Book sprints
+
+[@Heller2014]
 
 ## Wikidata
 
@@ -48,11 +66,21 @@ Writing:
 Wikidata:
 * ...
 
+**Pandoc** is an open source software to convert between different types of markup formats (HTML, LaTeX, DocBook, MediaWiki...).
+It's primary markup format is Markdown, a simple text-based format introduced by ... (see image/example...).
+
+Pandoc adds several syntax extensions to Markdown, such as tables, footnotes, and references. All input formats are converted to the internal document model of Pandoc for output in HTML, PDF, and EPUB among other formats.
+
+It has been proposed to extend the Pandoc document model [@Krijnen2014], but one of its strength is the limitation to a fixed set of possible document elements. This "less is more" principle of features also applies to Penflip, as explicitly stated by its author [@Burton2014].
+
+
 ## Summary
 
 ...
 
 ## References
+
+
 Collaborative writing (tools):
 * https://zapier.com/blog/collaborative-writing-tools-editorially-draft-penflip/
 * http://blogs.lse.ac.uk/impactofsocialsciences/2014/04/04/five-collaborative-writing-tools-for-academics/
