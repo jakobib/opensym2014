@@ -4,21 +4,21 @@ author: Jakob Voß
 category:
 - '\category{I.7.1}{Document and Text Processing}{Document and Text Editing}[version control]'
 - '\category{I.7.2}{Document and Text Processing}{Document Preparation}'
+abstract: ...blablabla...
 ...
-
 
 [OpenSym 2014](http://opensym.org/os2014/) (formerly WikiSym) will be held in Berlin on August 27-29. Call for paper deadline is April 20th. This article is going to be submitted to the [Community Track](http://www.opensym.org/os2014/submission/community-track-call/). Short experience reports may be 2-4 pages long, long experience reports may be 5-10 pages long.
 
+# Introduction
 
-...abstract...
-## Goal of the project
+**Goal of the project**
 
 * Simple Handbook, easy introduction
 * in German
 * focus on authority files in Wikidata
 * printed PDF, E-Book, and HTML
 
-## Collaborative Writing
+**Collaborative Writing**
 
 * Collaborative writing has become more and more widespread, not only in dedicated wikis, such as Wikipedia, but as common practice at work and among scholars.
 
@@ -38,15 +38,15 @@ category:
 
 [@Heller2014]
 
-## Wikidata
+**Wikidata**
 
 ...poorly documented (a lot of description, but very confusing, especially for non-English documentation)...
 
-## The Project
+**The Project**
 
 ...three month, nine students, no previous knowledge in any of the specific skills (Wikidata and collaborative writing in general, Markdown and git in particular)...
 
-## Tools
+**Tools**
 
 * Penflip
 * Pandoc Markdown
@@ -54,7 +54,7 @@ category:
 * Technical workflow: Penflip -> git -> pandoc -> HTML/PDF
 * Writing Workflow: several hours meetings once a week
 
-## Result & lessons learned
+**Result & lessons learned**
 
 Writing:
 * ...Penflip is still very new
@@ -74,12 +74,11 @@ Pandoc adds several syntax extensions to Markdown, such as tables, footnotes, an
 It has been proposed to extend the Pandoc document model [@Krijnen2014], but one of its strength is the limitation to a fixed set of possible document elements. This "less is more" principle of features also applies to Penflip, as explicitly stated by its author [@Burton2014].
 
 
-## Summary
+**Summary**
 
 ...
 
-## References
-
+# References
 
 Collaborative writing (tools):
 * https://zapier.com/blog/collaborative-writing-tools-editorially-draft-penflip/
