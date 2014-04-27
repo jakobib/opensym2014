@@ -1,80 +1,76 @@
 ---
-title: Collaborative creation of a Wikidata handbook using Penflip, Pandoc Markdown and git
+title: Collaborative creation of a Wikidata handbook
 author: Jakob Voß
+date: 2014-04-30
 category:
 - '\category{I.7.1}{Document and Text Processing}{Document and Text Editing}[version control]'
 - '\category{I.7.2}{Document and Text Processing}{Document Preparation}'
 about: '[OpenSym 2014](http://opensym.org/os2014/) (formerly WikiSym) will be held in Berlin on August 27-29. Call for paper deadline is May 4th. This article is going to be submitted to the [Community Track](http://www.opensym.org/os2014/submission/community-track-call/). Short experience reports may be 2-4 pages long, long experience reports may be 5-10 pages long.'
-abstract: |
-  describe the theoretical and practical background of the collaborative writing project...
+abstract: This article describes the theoretical and practical background of a collaborative writing project resulting in a handbook on Wikidata and authority control. The handbook was created by an untrained group of students during three month in spring 2014. It was written in Pandoc Markdown in a git Repository at Penflip using Trello and Annotator for project management and revision.
 ...
 
 # Introduction
 
-In the two years of its existence Wikidata^[https://www.wikidata.org] has become a central part of the Wikimedia projects. Just as these, Wikidata can be edited by anyone but contributions are possible in any language. In a nutshell, Wikidata is a multi-lingual database, but it's not easy to grasp what this actually means. In many parts the internal documentation is complex and incomplete, especially in other languages but English. This report describes the creation of an easy introduction to Wikidata collaboratively written in German by a group of students. The resulting handbook is being made available in multiple formats under a free license (CC-BY-SA). We hope that others can not only benefit from the result but only from the process and lessons learned. The report will first briefly introduce Wikidata and collaborative writing in general, followed by the more specific topic of the book. It will then describe organization and tools of creation and conclude with some results and findings.
+In the two years of its existence Wikidata^[<https://www.wikidata.org>] has become a central part of the Wikimedia projects [@Vrandecic2014]. In a nutshell, Wikidata is a multi-lingual database, but it's not easy to grasp what this actually means. The internal documentation of Wikidata is complex and incomplete in many parts, especially in other languages but English. This article describes the collaborative creation of a German documentation Wikidata with focus on authority control in Wikidata. The experience report will first introduce Wikidata and collaborative writing in general, followed by the more specific topic of the resulting handbook. It will then describe organization and tools of creation and conclude with results and lessons learned.
 
 ## Wikidata
 
-Wikidata is an open knowledge base operated by the Wikimedia Foundation. It was started in 2012, parts of its functionality are still being implemented. In 2014 Wikidata includes names, numbers, connections and other structured data about more than 15 million objects. The data can be edited by anyone as contributors are welcome to contribute to the "sum of all knowledge". It can then be embedded into Wikipedia articles and reused in other context as well. Despite its growing importance, Wikidata is not widely known, expect among technical enthusiasts. The project documentation in form of help pages can be quite confusing, especially its multi-lingual content. This difficulty is apperent for several reasons: first, the documentation is created without deadlines by a community of volunteers that try to describe a moving target in multiple languages in parallel. And second, (structured) data, the subject matter of Wikidata, is no familiar concept to most of us. Quite the contrary, there are multiple notions of data [@BallsunStanton2010] so it's not obvious what kind of database Wikidata actually is. 
+Wikidata is an open knowledge base operated by the Wikimedia Foundation. It was started in 2012 to support the other Wikimedia projects such as Wikipedia, Wikisource, and Wikibooks^[<https://wikimediafoundation.org/wiki/Our_projects>] with a central, multilingual database. Contributions to the database are likewise possible by anyone in virtually any language. As of spring 2014, parts of Wikidata functionality are still being implemented. By then Wikidata includes names, numbers, connections and other structured data about more than 15 million objects. Despite its growing importance, Wikidata is not widely known, expect among Open Data enthusiasts. Its documentation, given in form of help pages, can be quite confusing, especially when not read in English. This shortage is apperent for several reasons: first, the documentation is created by a volunteers without deadlines trying to describe a moving target in multiple languages in parallel. Second, structured data -- the subject matter of Wikidata -- is no familiar concept to most people. Quite the contrary, multiple notions of data are often confused [@BallsunStanton2012;@Voss2013] so it's not obvious what kind of database Wikidata actually is. 
 
-
-In a nutshell, Wikidata consists of "items" (also known as objects or entites) that can be described with multi-lingual labels, aliases, scope notes (also known as descriptions), and statements (also known as relationships). ...key-value store...
-
-From the point of view of library and information science, at least parts of Wikidata resemble an authority file.
-
+From a library and information science point of view, at least parts of Wikidata resemble an authority file: Wikidata records about objects, entities, or concepts are called *items*. Each item can have at most one preferred *label* per language and multiple alternative labels (*aliases*). Items can further have scope notes (*descriptions*) and *statements*. The latter are what makes Wikidata a knowledge base: a statement is kind of an enriched key-value pair with controlled fields as *properties*. Statement can either assign values to items (e.g. a literals, numbers, coordinates...) or connect items with each other. Statements can further be contextualized with qualifiers, ranks, and references.
 
 ## Collaborative Writing
 
-Collaborative writing has become more and more common also at work and among scholars. The first wave of online writing tools, during the rise of Web 2.0, focused on wikis with Wikipedia as most popular example. Meanwhile the wiki principle has become ubiquitous and more specialized applications have evolved. This development is driven by progress in web application technologies and by the establishment of the internet as ubiquuus medium. Moreover revision control systems become known and used also outside of software development.
+The principle of collaborative writing has been familiar to Wikipedia authors and open source developers since more than a decade. The first wave of online writing tools, during the rise of Web 2.0, focused on wikis with Wikipedia as most popular example. Meanwhile wiki functionalities have become almost ubiquitous and more specialized applications have evolved. This development is driven by progress in web application technologies and by the establishment of the internet as ubiquuus medium. Cloud services facilitate access to documents from any location and revision control systems such as git^[http://git-scm.com/book/] become known and used also outside of software development. These two features, easy access and tracking changes, support the creation of any collaborative writing tool. Several of these tools exist or are being developed (Google Docs/Drive, Etherpad, Penflip, Typewrite, and Fidus Writer to name some). A recent overview has been given by [@Schreiber2014] and by [@Schoch2014] but the current state of collaborative writing tools is very dynamic.
 
-Several collaborative writing tools exist or are being developed (Google Docs/Drive, Confluence, Etherpad, Editorially, Fidus Writer, Penflip etc.). Overviews have been given by ... and by ...
+By now the dynamic creation of knowledge artifacts by collaborative writing is becoming more and more common also among scholars [@Heller2014]. An example of new practices and processes that evolve around collaborative writing is the *book sprint*. A book sprint is an event that brings together a group of experts to create a book in a few days. The book is made available immediately at the end of the sprint as ebook and/or print-on-demand.
 
-...in addition: revision control systems (git), Dropbox, Bittorrent Sync...
+<!-- Examples of successfull booksprints include ...
+ Open Journalism handbook etc. -->
 
-..book sprints...
-[@Heller2014]
+# Topic of the handbook
 
-nine students, none of them with prior knowledge of Wikidata or collaborative writing in general or Markdown and git in particular.
+The Bachelor's degree in information management at Hannover University of Applied Sciences and Art includes a project to be conducted during one semester in supervised groups of eight to ten students. In spring 2014 the following task was offered:
 
-# The topic
+* creation of a handbook on Wikidata
+* written comprehensible in German
+* focus on authority control in Wikidata
+* publishing as ebook in HTML, PDF, and printed
 
-Goal of the project:
-* Simple Handbook, easy introduction
-* in German
-* focus on authority files in Wikidata
-* printed PDF, E-Book, and HTML
+The general goal of the project is to learn and practice basic concepts of project management. The particular task required to familiarize with a new and exciting topic (Wikidata) and to get into the whole process of creating a book, including media-neutral publishing. The focus on authority control in Wikidata was chosen to highlight an aspect of Wikidata that is also relevant to information management. As mentioned above, parts of Wikidata also resemble an authority file such as classifications, taxonomies and other controlled vocabularies used in cataloging and indexing. A deeper look reveals that many statements in Wikidata refer to other authority files as well. To give an example, the Wikidata property `P1036`^[https://www.wikidata.org/wiki/Property:P1036] is used to state the notation of Dewey Decimal Classification (DDC) that corresponds to a Wikidata item. 
 
-The topic of the book, as initially defined by the author, is ¨Normdaten in Wikidata¨ (authority files in Wikidata). Authority files or controlled vocabularies are common in cataloging and indexing.
-Library and information science. raised relevance with the rise of Semantic Web.
-Knowledge organization, information architecture RDF-people may also be familiar with SKOS (semantic web light) but other sets of linked data can be used as authority as well.
-Authority files can be connected/mapped. The largest project to such a mapping is VIAF
-TODO: cite my work on SeeAlso/BEACON.
+..can be used to find related literature...
 
+... authority properties in Wikidata have string values that, if used as IDs, link into another authority file...Wikidata statements with identifiers as values...
+... authority files can be connected/mapped. The largest project to such a mapping is VIAF
+see SeAlso/BEACON [@Voss2011]...
 Wikidata is both, an authority file in its own right, and hub for (inter)linking authority files.
 
-Large parts of the book, however, give a introduction into Wikidata in general. ... can be reused for introductions to Wikidata for other purpose as well.
+Mappings between authority files are important for interoperability but rarely 
+Wikipedia community has already proven to create mappings with GND to Wikipedia...
 
 # Organization and tools
 
-* Tools (git, Pandoc, Penflip, Trello, Annotator...)
-* One meeting a week with 4-5 hours of work, plus 1-6 hours at home during X weeks from first to final meeting, two meetings left out because of Feiertge (= 10 person x ( ? x 5 + ? x 3) )
-* Tried to do Agile development. Worked to some degree (the term is ...), not fully applicapable, but at least: always ensure a build process (at least for HTML and PDF).
+Nine students were assigned to the project to create a German Wikidata handbook with focus on authority control. Beginning from March we met once a week for 5 hours the following 14 weeks (with a break on easter holidays).^[The project still going on at the time of writing this article.] Given the fact that none of the students hat prior knowledge of Wikidata or serious collaborative writing in general, this time is comparable with a typical book sprint lasting 4 to 5 full days. Depending on the particular task the group was divided into smaller teams work or the book was created self-organized during the meetings.
 
-## The ¨seminar¨
-Booksprint-alike, conducted with students.
-three month.
-Aufteilen in smaller teams
+The technical workflow was set up and later extended by the supervisor to ensure a build process.
 
-## Tools
-The following tools were used during the project:
+~~~ {.dot .dpi=300 .scale=50% .title=technical workflow}
+digraph {
+  rankdir=LR;
+  Penflip->git[label=git];
+  git->HTML[label=Pandoc];
+  git->PDF[label=Pandoc];
+}
+~~~
 
-* Trello (<https://trello.com>) for project management
-* Penflip (<https://penflip.com>) for collaborative writing
-* Pandoc (<...>) to build the book in several output formats (PDF, HTML, ePUB...)
-* GitHub (<https://github.com>) as alternative provider of the book repository and for hosting snapshots
-* Annotator (<https://annotatorjs.org>) for distributed proofreading  
+The project started with a brief introduction to project management, Wikidata and the aspired topic of the handbook. We then collected first ideas for an outline and tools for the project. In the end, the following tool were used:
 
-Technical workflow: Penflip-git-panoc-HTML/PDF
+* Trello^[<https://trello.com>] for project management
+* Penflip^[<https://penflip.com>] for collaborative writing
+* Pandoc^[<http://johnmacfarlane.net/pandoc/>] to build the book in several output formats (PDF, HTML, ePUB...)
+* GitHub^[<https://github.com>] as alternative provider of the book repository and for hosting snapshots
+* Annotator^[<https://annotatorjs.org>] for distributed proofreading  
 
 ## Pandoc
 
@@ -86,16 +82,24 @@ It has been proposed to extend the Pandoc document model [@Krijnen2014], but one
 
 # Result
 
+collaboratively written in German . The resulting handbook is being made available in multiple formats under a free license (CC-BY-SA). We hope that others can not only benefit from the result but only from the process and lessons learned.
+
+Large parts of the book, however, give a introduction into Wikidata in general. ... can be reused for introductions to Wikidata for other purpose as well.
+
+It can then be embedded into Wikipedia articles and reused in other context as well. 
+
 book, written by the participants, organized as following:
 * outline ToC
 X pages in A5 format
 
 snapshots can be accessed at GitHub ...
+
 PDF and printed will be made available as PDF and print on demand.
 
 # Findings and lessons learned
 
 ...we learned about wikidata and project management...
+...Tried to do Agile development. Worked to some degree (the term is ...), not fully applicapable, but at least: always ensure a build process (at least for HTML and PDF)...
 
 ## Wikidata
 
@@ -124,15 +128,18 @@ easy method of annotation but not stable at the time of writing. Does not work f
 the term "book sprint" does not fully match because...
 nevertheless...
 
+Booksprint-alike, conducted with students.
+
 ...Book sprint..
 ...better: team of people familiar and newbiews for not to ¨Betriebsblind¨ neither long phase of intro
+
+nine students, none of them with prior knowledge of Wikidata or collaborative writing in general or Markdown and git in particular.
 
 
 # References
 
 Collaborative writing (tools):
-* https://zapier.com/blog/collaborative-writing-tools-editorially-draft-penflip/
-* http://blogs.lse.ac.uk/impactofsocialsciences/2014/04/04/five-collaborative-writing-tools-for-academics/
+* 
 * https://zenodo.org/record/8524?ln=en#.Uz6CGfldUVB
 * https://github.com/lambo/gittige-tools
 
