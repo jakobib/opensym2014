@@ -49,6 +49,8 @@ Wikidata is both, an authority file in its own right, and hub for (inter)linking
 Mappings between authority files are important for interoperability but rarely 
 Wikipedia community has already proven to create mappings with GND to Wikipedia...
 
+![mappings between Wikidata items and authority records](images/mappings.png)
+
 # Organization and tools
 
 Nine students were assigned to the project to create a German Wikidata handbook with focus on authority control. Beginning from March we met once a week for 5 hours the following 14 weeks (with a break on easter holidays).^[The project still going on at the time of writing this article.] Given the fact that none of the students hat prior knowledge of Wikidata or serious collaborative writing in general, this time is comparable with a typical book sprint lasting 4 to 5 full days. Depending on the particular task the group was divided into smaller teams work or the book was created self-organized during the meetings.
@@ -71,6 +73,8 @@ The project started with a brief introduction to project management, Wikidata an
 * Pandoc^[<http://johnmacfarlane.net/pandoc/>] to build the book in several output formats (PDF, HTML, ePUB...)
 * GitHub^[<https://github.com>] as alternative provider of the book repository and for hosting snapshots
 * Annotator^[<https://annotatorjs.org>] for distributed proofreading  
+
+...methode...
 
 ## Pandoc
 
