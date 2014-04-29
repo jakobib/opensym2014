@@ -6,7 +6,7 @@ category:
 - '\category{I.7.1}{Document and Text Processing}{Document and Text Editing}[version control]'
 - '\category{I.7.2}{Document and Text Processing}{Document Preparation}'
 about: '[OpenSym 2014](http://opensym.org/os2014/) (formerly WikiSym) will be held in Berlin on August 27-29. Call for paper deadline is May 4th. This article is going to be submitted to the [Community Track](http://www.opensym.org/os2014/submission/community-track-call/). Short experience reports may be 2-4 pages long, long experience reports may be 5-10 pages long.'
-abstract: This article describes the theoretical and practical background of a collaborative writing project resulting in a handbook on Wikidata and authority control. The handbook was created by an untrained group of students during three month in spring 2014. It was written in Pandoc Markdown in a git Repository at Penflip using Trello and Annotator for project management and revision.
+abstract: This article describes the theoretical and practical background of a collaborative writing project resulting in a handbook on Wikidata and authority control. The handbook was created by an untrained group of students during three month in spring 2014. It was written in Pandoc Markdown in a git repository at Penflip.com.
 ...
 
 # Introduction
@@ -49,9 +49,7 @@ Mappings between authority files are important for interoperability of informati
 
 # Organization and tools
 
-Nine students were assigned to the project to create a German Wikidata handbook with focus on authority control. Beginning from March we met once a week for 5 hours the following 14 weeks (with a break on easter holidays).^[The project still going on at the time of writing this article.] Given the fact that none of the students hat prior knowledge of Wikidata or serious collaborative writing in general, this time is comparable with a typical book sprint lasting 4 to 5 full days. Depending on the particular task the group was divided into smaller teams work or the book was created self-organized during the meetings.
-
-The technical workflow was set up and later extended by the supervisor to ensure a build process.
+Nine students were assigned to the project to create a German Wikidata handbook with focus on authority control. Beginning from March we met once a week for 5 hours the following 14 weeks (with a break on easter holidays).^[The project still going on at the time of writing this article.] Given the fact that none of the students hat prior knowledge of Wikidata or serious collaborative writing in general, this time is comparable with a typical book sprint lasting 4 to 5 full days. Depending on the particular task the group was divided into smaller teams work or the book was created self-organized during the meetings. The project started with a brief introduction to project management, Wikidata and the aspired topic of the handbook. First ideas for content and outline were collected by using the design studio method[@Ungar2008]. 
 
 ~~~ {.dot .dpi=300 .scale=60% .title=technical workflow}
 digraph {
@@ -62,86 +60,40 @@ digraph {
 }
 ~~~
 
-The project started with a brief introduction to project management, Wikidata and the aspired topic of the handbook. We then collected first ideas for an outline and tools for the project. In the end, the following tool were used:
+The technical workflow (figure 2) was set up and later extended by the supervisor to ensure a build process from the beginning. In the end, the following tool were used:
 
-* Trello^[<https://trello.com>] for project management
 * Penflip^[<https://penflip.com>] for collaborative writing
-* Pandoc^[<http://johnmacfarlane.net/pandoc/>] to build the book in several output formats (PDF, HTML, ePUB...)
-* GitHub^[<https://github.com>] as alternative provider of the book repository and for hosting snapshots
-* Annotator^[<https://annotatorjs.org>] for distributed proofreading  
+* Pandoc^[<http://johnmacfarlane.net/pandoc/>] to build the book in several output formats
+* Trello^[<https://trello.com>] for project management
+* Annotator^[<https://annotatorjs.org>] for distributed proofreading
+* GitHub^[<https://github.com>] for hosting snapshots
 
-...methode...
+## Penflip and Pandoc
 
-## Pandoc
+The collaborative writing platform Penflip was chosen primarily because it uses Markdown syntax for text markup and git to store files and revisions. Markdown is a human-readable, lightweight markup language, originally invented by John Gruber und Aaron Swartz. By now Markdown is used in many applications as popular alternative to HTML and other forms of wiki syntax. Several extensions to Markdown exist with Pandoc markdown as most powerful instance. Pandoc is an open source software created by John MacFarlane to convert between different types of markup formats (HTML, LaTeX, DocBook, MediaWiki...). Pandoc extends Markdown by features such as tables, footnotes, and references. All input formats are converted to the internal document model of Pandoc for output in HTML, PDF, and ePUB among other formats. It has been proposed to extend the Pandoc document model [@Krijnen2014], but one of its strength is the limitation to a fixed set of possible document elements. This "less is more" principle of features also applies to Penflip, as explicitly stated by its author [@Burton2014]. Git is a distributed revision control originally created by Linus Torvalds. Several hosting services exist to share and collaborate in git repositories, with GitHub being the most popular one. Penflip also provides git hosting but its aim and user interface is designed for writing text documents in Markdown syntax. Loren Burton, the creator of Penflip also referred to his product as kind of "GitHub for writers".
 
-Pandoc is an open source software to convert between different types of markup formats (HTML, LaTeX, DocBook, MediaWiki...). It's primary markup format is Markdown, a simple text-based format introduced by ... (see image/example...).
+## Trello and annotator
 
-Pandoc adds several syntax extensions to Markdown, such as tables, footnotes, and references. All input formats are converted to the internal document model of Pandoc for output in HTML, PDF, and EPUB among other formats.
-
-It has been proposed to extend the Pandoc document model [@Krijnen2014], but one of its strength is the limitation to a fixed set of possible document elements. This "less is more" principle of features also applies to Penflip, as explicitly stated by its author [@Burton2014].
+The web application Trello was chosen for project management because it is free and easier to understand and use than more elaborated products such as MS Project. Moreover there is an Android client. Annotator is a project of the Open Knowledge Foundation to add annotation functionality to any webpage. It is used during the final stage of the project to support easier feedback and corrections not only by git, and to just try out a new exciting technology.
 
 # Result
 
-collaboratively written in German . The resulting handbook is being made available in multiple formats under a free license (CC-BY-SA). We hope that others can not only benefit from the result but only from the process and lessons learned.
-
-Large parts of the book, however, give a introduction into Wikidata in general. ... can be reused for introductions to Wikidata for other purpose as well.
-
-It can then be embedded into Wikipedia articles and reused in other context as well. 
-
-book, written by the participants, organized as following:
-* outline ToC
-X pages in A5 format
-
-snapshots can be accessed at GitHub ...
-
-PDF and printed will be made available as PDF and print on demand.
+The resulting handbook, titled "Normdaten in Wikidata", will be made available in multiple formats under a free license (CC-BY-SA).^[See https://www.penflip.com/nichtich/normdaten-in-wikidata for the most recent version] A printed version can be obtained via print-on-demand with ISBN 978-1-291-85658-3. In A5 format it is around 70 pages, including a glossary, bibliography and appendix with a full list of authority properties in Wikidata. Despite the focus on authority control in Wikidata, large parts of the book can be reused for general introductions to Wikidata as well. The authors hope that others can not only benefit from the result but also from the process and lessons learned.
 
 # Findings and lessons learned
 
-...we learned about wikidata and project management...
-...Tried to do Agile development. Worked to some degree (the term is ...), not fully applicapable, but at least: always ensure a build process (at least for HTML and PDF)...
+During the project the participants learned a lot about Wikidata, authority control, and project management.  The latter could only be practiced in limited form because supervisor, client, and project leader were the same person. We tried agile development to some degree, although this concept from software engineering is not fully applicapable to a book sprint. To support agility in creating a book, it is important to ensure a build process that always results in the final HTML and PDF. The required coupling of Penflip and Pandoc was finally achieved by a cronjob and Makefile to build the current HTML and PDF every quarter an hour. Trello was very easy to use and sufficient to keep track of todo lists, but links between items in Trello and sections of the handbook had to be managed manually. As the outline of the book evolved during the project, text had to be rearange and moved around. This typical task in creation of a long text is poorly supported by any collaborative writing system, so does Penflip. In some cases it was easier to temporarily copy & paste text into word processing software or to edit multiple files in a local clone of the git repository instead of using the web interface. The overall impression of Penflip, however, is fairly good. The software is still very new, so it has some usability and stability issues, but it suited our needs. In particular the complexity of git is hidden well to the users, unless there is a merge conflict. The collaborative writing platform could further be extended by support of live editing, such as in Etherpad, and by better support of Pandoc Markdown features. Finally, Annotator is an easy method of annotation but not stable at the time of writing. Especially annotating changing documents seems to be an unsolved problem.
 
-## Wikidata
+Wikidata, the concrete topic of the book ...
 
 When getting in touch with **Wikidata** we found most parts of the user interface are not very complicated. Nevertheless it was difficult to find all relevant aspects of Wikidata for several reasons. First, the abstract nature of Wikidata as database is less obvious to understand than an encyclopedia (Wikipedia), a media collection (Wikimedia Commons), or a travel guide (Wikivoyage), to name a few alternative Wikimedia projects. Second, the Wikidata project is still evolving so it was not always clear which features are planned, which are implemented, and which are actually used in practice. The third and maybe the most important barrier of adoption is the general state of documentation within and about the project. The problem is not a lack of documentation but its organization and fragmentation across different wikis, pages, and languages. Information about implementation and planning is mixed with descriptions and usage guidelines in different levels of detail and relevance. Especially pages in different languages seem to be not in sync with the ongoing development of Wikidata and with each other, so one cannot avoid also consulting the English documentation. We hope to improve this situation by providing a consistent introductionary documentation, at least for German.
 
-## Penflip
 
-Writing with Penflip:
+...Book sprint: better: team of people familiar and newbiews for not to ¨Betriebsblind¨ neither long phase of intro
 
-* ...Penflip is still very new, some usability issues
-* ...complexity of git hidden well, but merging still difficult
-* ...missing live editing as supported in Etherpad
-* ...integration of Pandoc missing, must be added by hand
-* ...missing easy functionality to move around / rearange texts
-
-## Git
-
-...mostly hidden to the participants... Merge and branches are not suitable
-
-## Annotator
-
-easy method of annotation but not stable at the time of writing. Does not work for changing documents...
-
-## Conducting a book sprint at university course
-
-the term "book sprint" does not fully match because...
-nevertheless...
-
-Booksprint-alike, conducted with students.
-
-...Book sprint..
-...better: team of people familiar and newbiews for not to ¨Betriebsblind¨ neither long phase of intro
-
-nine students, none of them with prior knowledge of Wikidata or collaborative writing in general or Markdown and git in particular.
+Summary: Conducting a book sprint at university course
+nine students, none of them with prior knowledge of Wikidke htata or collaborative writing in general or Markdown and git in particular.
 
 
 # References
 
-Collaborative writing (tools):
-* 
-* https://zenodo.org/record/8524?ln=en#.Uz6CGfldUVB
-* https://github.com/lambo/gittige-tools
-
-Wikidata:
-* ...
