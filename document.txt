@@ -37,19 +37,15 @@ The Bachelor's degree in information management at Hannover University of Applie
 * focus on authority control in Wikidata
 * publishing as ebook in HTML, PDF, and printed
 
-The general goal of the project is to learn and practice basic concepts of project management. The particular task required to familiarize with a new and exciting topic (Wikidata) and to get into the whole process of creating a book, including media-neutral publishing. The focus on authority control in Wikidata was chosen to highlight an aspect of Wikidata that is also relevant to information management. As mentioned above, parts of Wikidata also resemble an authority file such as classifications, taxonomies and other controlled vocabularies used in cataloging and indexing. A deeper look reveals that many statements in Wikidata refer to other authority files as well. To give an example, the Wikidata property `P1036`^[https://www.wikidata.org/wiki/Property:P1036] is used to state the notation of Dewey Decimal Classification (DDC) that corresponds to a Wikidata item. 
+The general goal of the project is to learn and practice basic concepts of project management. The particular task required to familiarize with a new and exciting topic (Wikidata) and to get into the whole process of creating a book, including media-neutral publishing. 
 
-..can be used to find related literature...
+## Authority control in Wikidata
 
-... authority properties in Wikidata have string values that, if used as IDs, link into another authority file...Wikidata statements with identifiers as values...
-... authority files can be connected/mapped. The largest project to such a mapping is VIAF
-see SeAlso/BEACON [@Voss2011]...
-Wikidata is both, an authority file in its own right, and hub for (inter)linking authority files.
+The focus on authority control in Wikidata was chosen to highlight an aspect of Wikidata much relevant to information management. As mentioned above, parts of Wikidata also resemble an authority file such as classifications, taxonomies and other controlled vocabularies used in cataloging and indexing. A deeper look reveals that many statements in Wikidata refer to other authority files as well. To give an example, the Wikidata property `P1036`^[https://www.wikidata.org/wiki/Property:P1036] is used to state the notation of Dewey Decimal Classification (DDC) that corresponds to a Wikidata item. This notation can then be usde to find related documents in library catalogs. By now Wikidata contains more then 150 properties used to link Wikidata items to other authority files via identifier string values (figure 1). 
 
-Mappings between authority files are important for interoperability but rarely 
-Wikipedia community has already proven to create mappings with GND to Wikipedia...
+![Wikidata/authority file mappings](images/mappings.png)
 
-![mappings between Wikidata items and authority records](images/mappings.png)
+Mappings between authority files are important for interoperability of information systems, especially in cultural heritage institutions. The largest hub of authority file mappings can be found in VIAF project^[http://viaf.org/], including links to Wikipedia. Authority mappings between Wikipedia and other sources are common also to provide additional links [@Voss2011] and the Wikimedia community has proven to provide qualitative mappings. By inclusion and extension of these mappings, Wikidata becomes both, an authority file in its own right, and a hub for (inter)linking authority files.
 
 # Organization and tools
 
@@ -57,7 +53,7 @@ Nine students were assigned to the project to create a German Wikidata handbook 
 
 The technical workflow was set up and later extended by the supervisor to ensure a build process.
 
-~~~ {.dot .dpi=300 .scale=50% .title=technical workflow}
+~~~ {.dot .dpi=300 .scale=60% .title=technical workflow}
 digraph {
   rankdir=LR;
   Penflip->git[label=git];
