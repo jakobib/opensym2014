@@ -23,21 +23,21 @@ From a library and information science point of view, at least parts of Wikidata
 
 The principle of collaborative writing has been familiar to Wikipedia authors and open source developers since more than a decade. The first wave of online writing tools, during the rise of Web 2.0, focused on wikis with Wikipedia as most popular example. Meanwhile wiki functionalities have become almost ubiquitous and more specialized applications have evolved. This development is driven by progress in web application technologies and by the establishment of the internet as ubiquuus medium. Cloud services facilitate access to documents from any location and revision control systems such as git^[http://git-scm.com/book/] become known and used also outside of software development. These two features, easy access and tracking changes, support the creation of any collaborative writing tool. Several of these tools exist or are being developed (Google Docs/Drive, Etherpad, Penflip, Typewrite, and Fidus Writer to name some). A recent overview has been given by [@Schreiber2014] and by [@Schoch2014] but the current state of collaborative writing tools is very dynamic.
 
-By now the dynamic creation of knowledge artifacts by collaborative writing is becoming more and more common also among scholars [@Heller2014]. An example of new practices and processes that evolve around collaborative writing is the *book sprint*. A book sprint is an event that brings together a group of experts to create a book in a few days. The book is made available immediately at the end of the sprint as ebook and/or print-on-demand.
+The dynamic creation of knowledge artifacts by collaborative writing is becoming more and more common also among scholars [@Heller2014]. An example of new practices and processes that evolve around this trend is called a *book sprint*. A book sprint is an event that brings together a group of experts to create a book in a few days. The book is made available immediately at the end of the sprint as ebook and/or print-on-demand.
 
 <!-- Examples of successfull booksprints include ...
  Open Journalism handbook etc. -->
 
 # Topic of the handbook
 
-The Bachelor's degree in information management at Hannover University of Applied Sciences and Art includes a project to be conducted during one semester in supervised groups of eight to ten students. In spring 2014 the following task was offered:
+The Bachelor's degree in information management at Hannover University of Applied Sciences and Art (HsH) includes a project conducted during one semester in supervised groups of eight to ten students. The general goal of the student project is to learn and practice basic concepts of project management. In spring 2014 a project titled "Normdaten in Wikidata" (authority control in Wikidata) was offered with the following the following objective:
 
 * creation of a handbook on Wikidata
 * written comprehensible in German
 * focus on authority control in Wikidata
 * publishing as ebook in HTML, PDF, and printed
 
-The general goal of the project is to learn and practice basic concepts of project management. The particular task required to familiarize with a new and exciting topic (Wikidata) and to get into the whole process of creating a book, including media-neutral publishing. 
+The particular task required to familiarize with a new and exciting topic (Wikidata) and to get into the whole process of creating a book, including media-neutral publishing. 
 
 ## Authority control in Wikidata
 
