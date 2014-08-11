@@ -125,9 +125,29 @@ $if(numberofauthors)$\numberofauthors{$numberofauthors$}$endif$
 \author{
 $for(author)$
   \alignauthor 
-  $author$
+  $author.name$
+  $if(author.refaddr)$
+    \\
+    $for(author.refaddr)$
+      \affaddr{$author.refaddr$}\\
+    $endfor$
+  $endif$
+  $if(author.email)$\email{$author.email$}$endif$
 $endfor$
 }
+
+$if(permission)$
+\permission{$permission$}
+$endif$
+$if(conference.short)$
+\conferenceinfo{$conference.short$}{$conference.full$}
+$endif$
+$if(doi)$
+\crdata{http://dx.doi.org/$doi$}
+$endif$
+$if(license)$
+\copyrightetc{$license$ $for(author)$ $author.name$ $endfor$}
+$endif$
 
 $if(additionalauthors)$\additionalauthors{$additionalauthors$}$endif$
 
