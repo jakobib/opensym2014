@@ -7,6 +7,7 @@ author:
   - Hannover / Göttingen
   email: jakob.voss@gbv.de
 date: 2014-04-30
+doi: 10.5281/zenodo.11249
 category:
 - '\category{I.7.1}{Document and Text Processing}{Document and Text Editing}[version control]'
 - '\category{I.7.2}{Document and Text Processing}{Document Preparation}'

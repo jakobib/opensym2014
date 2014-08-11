@@ -137,13 +137,13 @@ $endfor$
 }
 
 $if(permission)$
-\permission{$permission$}
+\permission{
+    $permission$
+    $if(doi)$\\http://dox.doi.org/$doi$$endif$
+}
 $endif$
 $if(conference.short)$
 \conferenceinfo{$conference.short$}{$conference.full$}
-$endif$
-$if(doi)$
-\crdata{http://dx.doi.org/$doi$}
 $endif$
 $if(license)$
 \copyrightetc{$license$ $for(author)$ $author.name$ $endfor$}
