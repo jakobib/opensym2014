@@ -1,14 +1,16 @@
-PDF=wikidataopensym2014.pdf
+# requires pandoc and App::pandoc::preprocess >= 0.9.5
 
-$(PDF): document.txt
-	PATH=~/.cabal/bin:$$PATH; \
-	test -d tmp || mkdir tmp; \
+FULL=wikidataopensym2014
+ACM=wikidataopensym2014-acm
+
+.SUFFIXES: .pdf .md
+.md.pdf:
 	ppp --img tmp $< | pandoc -s -f markdown -o $@ \
 		--template=sigproc-pandoc-template.tex \
 		--csl=acm-sig-proceedings.csl \
-		--bibliography references.bib
+		--bibliography $(<:.md=.bib)
 
 clean:
-	rm $(PDF)
+	rm -f *.pdf
 
-new: clean $(PDF)
+new: clean $(FULL).pdf $(ACM).pdf
