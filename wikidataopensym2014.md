@@ -14,7 +14,7 @@ category:
 about: '[OpenSym 2014](http://opensym.org/os2014/) (formerly WikiSym) will be held in Berlin on August 27-29. Call for paper deadline is May 4th. This article is going to be submitted to the [Community Track](http://www.opensym.org/os2014/submission/community-track-call/). Short experience reports may be 2-4 pages long, long experience reports may be 5-10 pages long.'
 abstract: This article describes the theoretical and practical background of a collaborative writing project resulting in a handbook on Wikidata and authority control. The handbook was created by an untrained group of students during three month in spring 2014. It was written in Pandoc Markdown in a git repository at Penflip.com.
 permission: You are free to share and adapt this document for any purpose.
-license: CC-Zero
+copyright: Closed Access ACM proceedings version to be published with DOI http://dox.doi.org/10.1145/2641580.2641631. This version CC0 Jakob Voß
 conference:
   short: Opensym (WikiSym) '14
   full: August 27-29, 2014, Berlin, Germany

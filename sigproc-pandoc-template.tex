@@ -115,7 +115,6 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
-
 \begin{document}
 
 $if(title)$\title{$title$}$endif$
@@ -139,14 +138,22 @@ $endfor$
 $if(permission)$
 \permission{
     $permission$
-    $if(doi)$\\http://dox.doi.org/$doi$$endif$
 }
 $endif$
 $if(conference.short)$
-\conferenceinfo{$conference.short$}{$conference.full$}
+\conferenceinfo{$conference.short$,}{$conference.full$}
 $endif$
 $if(license)$
-\copyrightetc{$license$ $for(author)$ $author.name$ $endfor$}
+\copyrightetc{
+    $license$ $for(author)$ $author.name$ $endfor$
+    $if(doi)$\\http://dox.doi.org/$doi$$endif$
+}
+$endif$
+$if(copyright)$
+\copyrightetc{
+    $copyright$
+    $if(doi)$\\http://dox.doi.org/$doi$$endif$
+}
 $endif$
 
 $if(additionalauthors)$\additionalauthors{$additionalauthors$}$endif$
